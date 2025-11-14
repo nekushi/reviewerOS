@@ -1,3 +1,10 @@
+:root {
+  --bg-color: #131212;
+  --btn-color: #c275de;
+  --btn-shadow: #d386ef;
+  --btn-active: #a053bc;
+}
+
 * {
   box-sizing: border-box;
   /* border: 1px solid red; */
@@ -7,7 +14,7 @@
   font-variation-settings: "slnt" 0;
 }
 body {
-  background-color: #131212;
+  background-color: var(--bg-color);
   height: 100dvh;
   margin: 0;
   padding: 0;
@@ -47,14 +54,14 @@ button {
   left: 50%;
   transform: translate(-50%, 0);
   height: 3rem;
-  background-color: #d98026;
+  background-color: var(--btn-color);
   border-radius: 12px;
   color: #ffffff;
   border: none;
-  box-shadow: inset 0 0 10px #e96816;
+  box-shadow: inset 0 0 10px var(--btn-shadow);
 }
 button:active {
-  background-color: #e96816;
+  background-color: var(--btn-active);
 }
 .second-page {
   position: relative;
@@ -76,6 +83,10 @@ button:active {
   flex-wrap: wrap;
   max-height: 28rem;
   overflow: auto;
+  scrollbar-width: none;
+}
+h2#enum {
+  margin-bottom: -1.5rem;
 }
 .enums > * {
   text-align: left;
