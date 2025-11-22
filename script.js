@@ -291,7 +291,7 @@ const questions = [
   },
   {
     question: "has a single thread of control",
-    answer: "process",
+    answer: "Process",
   },
   {
     question: "is heavy-weight",
@@ -465,6 +465,22 @@ const questions = [
   {
     question: "removed in FIFO order but several may be removed at a time",
     answer: "Concurrent",
+  },
+  {
+    question: "many user level threads are mapped to one kernel level thread",
+    answer: "Many to One multithreading models",
+  },
+  {
+    question: "each user level threads is mapped to one kernel level thread",
+    answer: "One to One multithreading models",
+  },
+  {
+    question: "many user level threads are mapped to many kernel level thread",
+    answer: "Many to many multithreading models",
+  },
+  {
+    question: "growing in popularity as numbers of threads increase",
+    answer: "Implicit Threading",
   },
 ];
 
